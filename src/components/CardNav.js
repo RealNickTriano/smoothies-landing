@@ -5,9 +5,9 @@ import { NavItem } from './NavItem'
 
 const CardNav = ({ navItems }) => {
   return (
-    <div className='flex justify-between items-center'>
+    <div className='flex flex-col desktop:flex-row justify-between items-center'>
         <Logo />
-        <div className='flex justify-center items-center gap-10'>
+        <div className='flex desktop:flex-row flex-col justify-center items-center gap-10'>
             {
                 navItems.map((item, index) => {
                     return (

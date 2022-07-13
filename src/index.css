@@ -7,7 +7,10 @@
 body {
   background: #F6E2E6;
   font-family: 'Quicksand', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+img {
+  max-width: none;
 }
 
 .nav-line{
@@ -28,5 +31,11 @@ body {
 
   to {
       width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    overflow-x: auto;
   }
 }

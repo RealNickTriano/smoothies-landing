@@ -4,7 +4,7 @@ import SmoothieDisplay from './SmoothieDisplay'
 
 const MainContent = () => {
   return (
-    <div className='flex justify-around items-center'>
+    <div className='desktop:flex-row flex flex-col justify-center items-center'>
         <Details />
         <SmoothieDisplay />
     </div>
