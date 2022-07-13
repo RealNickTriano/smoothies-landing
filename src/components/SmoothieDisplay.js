@@ -10,3 +10,4 @@ const SmoothieDisplay = () => {
 }
 
 export default SmoothieDisplay
+
