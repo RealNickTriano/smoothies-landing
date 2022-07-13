@@ -29,7 +29,7 @@ const MainCard = ({ navItems }) => {
             <img className='desktop:w-[100%] w-[75%]' src={blueberry} alt="" />
         </div>
         
-        <div className='z-10 flex desktop:flex-row flex-col justify-center items-center desktop:absolute -bottom-52 desktop:-left-20 desktop:gap-8 gap-16 bottom left-32 mt-24 desktop:mt-0'>
+        <div className='z-10 flex desktop:flex-row flex-col justify-center items-center desktop:absolute -bottom-52 desktop:-left-20 desktop:gap-8 gap-16 bottom left-32 mt-24 desktop:mt-0 font-montserrat'>
             <PreviewSmoothie 
                 image={blueBanSmoothie}
                 color={'#CEDBEB'}
