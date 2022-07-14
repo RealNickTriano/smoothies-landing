@@ -2,10 +2,13 @@ import DrinkSection from "./components/DrinkSection";
 import MainCard from "./components/MainCard";
 import blob from './images/blob.svg';
 import blueBlob from './images/blueblob.svg';
+import { useRef } from 'react';
 
 function App() {
 
   const navItems = ['Home', 'Specialties', 'About', 'Contact Us']
+
+  const specialties = useRef(null)
 
   return (
     <>
@@ -15,9 +18,12 @@ function App() {
       <div className="flex justify-center items-start desktop:min-h-screen desktop:mt-36 mt-16">
         <MainCard 
           navItems={navItems}
+          specialtiesRef={specialties}
         />
       </div>
-      <DrinkSection />
+      <DrinkSection 
+        refProp={specialties}
+      />
     </>
   );
 }

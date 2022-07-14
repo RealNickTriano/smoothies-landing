@@ -2,9 +2,9 @@ import React from 'react'
 import SpecialtyImage from './SpecialtyImage'
 import bluesmooth from '../images/blue-ban-smooth.svg'
 
-const DrinkSection = () => {
+const DrinkSection = ({ refProp }) => {
   return (
-    <div className='min-h-screen flex flex-col justify-center items-center z-10'>
+    <div ref={refProp} className='min-h-screen flex flex-col justify-center items-center z-10'>
         <h1 className='text-3xl font-bold text-center border-b-8 border-red-500 rounded-lg mb-5 z-10'>Specialties</h1>
         <h1 
             className='text-3xl font-bold text-center z-10'
