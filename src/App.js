@@ -1,6 +1,7 @@
 import DrinkSection from "./components/DrinkSection";
 import MainCard from "./components/MainCard";
 import blob from './images/blob.svg';
+import blueBlob from './images/blueblob.svg';
 
 function App() {
 
