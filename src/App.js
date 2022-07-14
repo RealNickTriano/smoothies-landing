@@ -1,3 +1,4 @@
+import DrinkSection from "./components/DrinkSection";
 import MainCard from "./components/MainCard";
 import blob from './images/blob.svg';
 
@@ -15,6 +16,7 @@ function App() {
           navItems={navItems}
         />
       </div>
+      <DrinkSection />
     </>
   );
 }

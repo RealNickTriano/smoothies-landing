@@ -17,17 +17,22 @@ module.exports = {
     extend: {
       keyframes: {
         growToRight: {
-          '0%': { transform: 'width: 0%', width: '0%' },
-          '100%': { transform: 'width: 100%', width: '100%' },
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
         },
         wiggle: {
-          '0%, 100%': { transform: 'rotate(-15deg)' },
-          '50%': { transform: 'rotate(45deg)' },
+          '0%, 100%': { transform: 'skew(0)', transform: 'rotate(-15deg)' },
+          '50%': { transform: `skew(15deg, 15deg)`, transform: 'rotate(45deg)' },
+        },
+        shadowIn: {
+          '0%': {boxShadow: '0px 0px 0px rgba(49,104,170,1)'},
+          '100%': {boxShadow: '20px 20px 0px rgba(49,104,170,1)'}
         }
     },
     animation: {
       growToRight: 'growToRight .5s linear 1',
       wiggle: 'wiggle 5s ease-in-out infinite',
+      shadowIn: 'shadowIn 1s ease-in-out 1',
     }
   },
   plugins: [],

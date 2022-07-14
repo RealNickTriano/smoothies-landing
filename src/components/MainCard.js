@@ -35,21 +35,21 @@ const MainCard = ({ navItems }) => {
                 color={'#CEDBEB'}
                 darkColor={'#3168AA'}
                 name={'Blueberry Banana Smoothie'}
-                price={'48.00'}
+                price={'5.75'}
             />
             <PreviewSmoothie 
                 image={cucumberSmoothie}
                 color={'#E2FBC4'}
                 darkColor={'#889F34'}
                 name={'Cucumber Smoothie'}
-                price={'36.00'}
+                price={'4.50'}
             />
             <PreviewSmoothie 
                 image={mangoAlmondSmoothie}
                 color={'#FDF3D8'}
                 darkColor={'#FEAC00'}
                 name={'Mango-Almond Smoothie'}
-                price={'45.00'}
+                price={'5.25'}
             />
         </div>
         <SocialBar />
