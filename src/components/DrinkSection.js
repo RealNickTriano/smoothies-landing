@@ -11,12 +11,12 @@ const DrinkSection = ({ refProp }) => {
             >
                 Fresh Ingredients Every Time.
         </h1>
-        <div className='my-16 flex justify-center items-center gap-12'>
+        <div className='my-16 flex justify-center items-center gap-12 animate-riseUpFadeIn'>
             <SpecialtyImage 
                 color={'blue'}
                 image={bluesmooth}
             />
-            <div className='bg-gradient-to-r from-[#3168AA] via-white to-[#3168AA] p-1 z-10'>
+            {/* <div className='bg-gradient-to-r from-[#3168AA] via-white to-[#3168AA] p-1 z-10'> */}
                 <div className='flex flex-col justify-center items-start gap-5 bg-[#CEDBEB] p-10 z-10 animate-shadowIn'
                     style={{boxShadow: '20px 20px 0px rgba(49,104,170,1)'}}
                 >
@@ -43,7 +43,7 @@ const DrinkSection = ({ refProp }) => {
                         </h1>
                     </div>
                 </div>
-            </div>
+            {/* </div> */}
         </div>
     </div>
   )

@@ -24,6 +24,10 @@ module.exports = {
           '0%': { left: '20rem' },
           '100%': { left: '25rem' },
         },
+        riseUpFadeIn: {
+          '0%': { transform: 'translate(0,5rem)', opacity: '0' },
+          '100%': { transform: 'translate(0,0)', opacity: '1' },
+        },
         wiggle: {
           '0%, 100%': { transform: 'scale(0)', transform: 'rotate(-15deg)' },
           '50%': { transform: `scale(50%)`, transform: 'rotate(45deg)' },
@@ -38,6 +42,7 @@ module.exports = {
       wiggle: 'wiggle 5s ease-in-out infinite',
       shadowIn: 'shadowIn 1s ease-in-out 1',
       comeOutLeft: 'comeOutLeft 1s ease-in-out 1',
+      riseUpFadeIn: 'riseUpFadeIn 1s ease-in-out 1',
     }
   },
   plugins: [],
