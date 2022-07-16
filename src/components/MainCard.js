@@ -11,12 +11,13 @@ import mangoAlmondSmoothie from '../images/mangoalmond.svg'
 import blob from '../images/blob.svg';
 import SocialBar from './SocialBar'
 
-const MainCard = ({ navItems, specialtiesRef }) => {
+const MainCard = ({ navItems, specialtiesRef, aboutRef }) => {
   return (
     <div className='bg-white rounded-xl border-2 border-red-500 desktop:shadow-lg desktop:px-20 px-5 py-12 pb-40 desktop:w-full desktop:translate-x-5 desktop:ml-36 relative z-10'>
         <CardNav 
             navItems={navItems}
             specialtiesRef={specialtiesRef}
+            aboutRef={aboutRef}
         />
         <MainContent />
         

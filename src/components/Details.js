@@ -11,7 +11,7 @@ const Details = () => {
         <p className='font-medium my-12 desktop:w-96 w-64'>Smoothies are so healthy, refreshing and the perfect way to pack some extra fruit and veggies into your diet
         </p>
         <div>
-        <Button 
+        <Button
             text='Order Now'
         />
         <div className='flex justify-center items-center gap-5 mt-2'>

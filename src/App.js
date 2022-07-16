@@ -3,12 +3,15 @@ import MainCard from "./components/MainCard";
 import blob from './images/blob.svg';
 import blueBlob from './images/blueblob.svg';
 import { useRef } from 'react';
+import AboutSection from "./components/AboutSection";
+import Footer from "./components/Footer";
 
 function App() {
 
   const navItems = ['Home', 'Specialties', 'About', 'Contact Us']
 
   const specialties = useRef(null)
+  const about = useRef(null)
 
   return (
     <>
@@ -19,11 +22,16 @@ function App() {
         <MainCard 
           navItems={navItems}
           specialtiesRef={specialties}
+          aboutRef={about}
         />
       </div>
       <DrinkSection 
         refProp={specialties}
       />
+      <AboutSection 
+        refProp={about}
+      />
+      <Footer />
     </>
   );
 }

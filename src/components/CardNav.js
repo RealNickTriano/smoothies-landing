@@ -3,7 +3,7 @@ import Logo from './Logo'
 import { NavItem } from './NavItem'
 
 
-const CardNav = ({ navItems, specialtiesRef }) => {
+const CardNav = ({ navItems, specialtiesRef, aboutRef }) => {
   return (
     <div className='flex flex-col desktop:flex-row justify-between items-center'>
         <Logo />
@@ -15,6 +15,7 @@ const CardNav = ({ navItems, specialtiesRef }) => {
                             key={index}
                             text={item}
                             link={'#'}
+                            aboutRef={aboutRef}
                             specialtiesRef={specialtiesRef}
                         />
                     )
