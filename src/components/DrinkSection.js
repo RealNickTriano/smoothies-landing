@@ -23,6 +23,8 @@ const DrinkSection = ({ refProp }) => {
             image={bluesmooth}
             color={'#CEDBEB'}
             darkColor={'#3168AA'}
+            decoration={'decoration-[#3168AA]'}
+            width={'w-[140%]'}
             animation={'animate-shadowInBlue'}
             title={'Blueberry Banana Smoothie'}
             ingredients={['2 Bananas', '1 Cup of Blueberries', '2 Cups Of Your choice of milk']}
@@ -31,6 +33,8 @@ const DrinkSection = ({ refProp }) => {
             image={cucumbersmoothie}
             color={'#E2FBC4'}
             darkColor={'#889F34'}
+            decoration={'decoration-[#889F34]'}
+            width={'w-[150%]'}
             animation={'animate-shadowInGreen'}
             title={'Cucumber Smoothie'}
             ingredients={['1 Cucumber', '1 Avacado', '1 Cup of kale', '2 Cups Of Your choice of milk']}
@@ -39,6 +43,8 @@ const DrinkSection = ({ refProp }) => {
             image={mangoalmond}
             color={'#FDF3D8'}
             darkColor={'#FEAC00'}
+            decoration={'decoration-[#FEAC00]'}
+            width={'w-[150%]'}
             animation={'animate-shadowInYellow'}
             title={'Mango Almond Smoothie'}
             ingredients={['2 Mangoes', '1 Cup of Almonds', '2 Cups Of Your choice of milk']}
