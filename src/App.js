@@ -5,6 +5,9 @@ import blueBlob from './images/blueblob.svg';
 import { useRef } from 'react';
 import AboutSection from "./components/AboutSection";
 import Footer from "./components/Footer";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import ContactSection from "./components/ContactSection";
 
 function App() {
 
@@ -31,6 +34,7 @@ function App() {
       <AboutSection 
         refProp={about}
       />
+      <ContactSection />
       <Footer />
     </>
   );

@@ -31,12 +31,21 @@ img {
 }
 
 @keyframes growToRight {
-  from {
+  0% {
       width: 0%;
   }
 
-  to {
+  100% {
       width: 100%;
+  }
+}
+@keyframes shadowInBlue {
+  from {
+    boxShadow: 0px 0px 0px rgba(49,104,170,1);
+  }
+
+  to {
+    boxShadow: 20px 20px 0px rgba(49,104,170,1);
   }
 }
 

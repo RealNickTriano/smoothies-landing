@@ -1,4 +1,5 @@
 import React from 'react'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 import bluesmooth from '../images/blue-ban-smooth.svg'
 import cucumbersmoothie from '../images/cucumbersmoothie.svg'
 import mangoalmond from '../images/mangoalmond.svg'
@@ -8,17 +9,29 @@ const DrinkSection = ({ refProp }) => {
   return (
     <div ref={refProp} className='min-h-screen flex flex-col justify-center items-center z-10'>
         <div className='mb-5'>
-            <h1 className='text-3xl font-bold text-center rounded-lg z-10'>Specialties</h1>
-            <div className='bg-[#DD2D50] h-2 rounded-full animate-growToRight'></div>
-        </div>
-        <h1 
-            className='text-3xl font-bold text-center z-10'
+            <AnimationOnScroll
+               animateIn='animate__fadeInDown'
+               animateOnce={true} 
             >
-                <span className='animate-growAndFadeIn'>Fresh </span> 
-                <span className='animate-growAndFadeIn1'>Ingredients </span>
-                <span className='animate-growAndFadeIn2'>Every </span> 
-                <span className='animate-growAndFadeIn3'>Time. </span>
-        </h1>
+            <h1 className='text-3xl font-bold text-center rounded-lg z-10'>Specialties</h1>
+            </AnimationOnScroll>
+            <AnimationOnScroll
+               animateIn='growToRight'
+               animateOnce={true} 
+            >
+                <div className='bg-[#DD2D50] h-2 rounded-full'></div>
+            </AnimationOnScroll>
+        </div>
+        <AnimationOnScroll
+            animateIn='animate__fadeInDown'
+            animateOnce={true} 
+        >
+            <h1 
+                className='text-3xl font-bold text-center z-10'
+            >
+                Fresh Ingredients Every Time.
+            </h1>
+        </AnimationOnScroll>
         <DrinkItem 
             image={bluesmooth}
             color={'#CEDBEB'}

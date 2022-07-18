@@ -6,6 +6,8 @@ export const NavItem = ({ text, link, specialtiesRef, aboutRef }) => {
 
     const scrollToDrinks = () => specialtiesRef.current.scrollIntoView()
     const scrollToAbout = () => aboutRef.current.scrollIntoView()
+    const scrollToHome = () => {/* TODO */}
+    const scrollToContact = () => {/* TODO */}
 
    // nav-line-animate
   return (
@@ -14,7 +16,7 @@ export const NavItem = ({ text, link, specialtiesRef, aboutRef }) => {
             <button  
                 onMouseEnter={() => setAnimate(true)}
                 onMouseLeave={() => setAnimate(false)}
-                onClick={text === 'Specialties' ?scrollToDrinks : 'About' && scrollToAbout}
+                onClick={text === 'Specialties' ?scrollToDrinks : 'About' ? scrollToAbout : 'Home' ? scrollToHome : 'Contact Us' ? scrollToContact : {}}
                 style={{color: text === 'Contact Us' ? '#DD2D50' : '',
                         fontWeight: text === 'Contact Us' ? '700' : ''}}
                 className='font-[500] text-lg hover:cursor-pointer text-center hover:font-[700]'
