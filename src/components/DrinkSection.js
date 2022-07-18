@@ -3,6 +3,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll'
 import bluesmooth from '../images/blue-ban-smooth.svg'
 import cucumbersmoothie from '../images/cucumbersmoothie.svg'
 import mangoalmond from '../images/mangoalmond.svg'
+import Button from './Button'
 import DrinkItem from './DrinkItem'
 
 const DrinkSection = ({ refProp }) => {
@@ -12,19 +13,22 @@ const DrinkSection = ({ refProp }) => {
             <AnimationOnScroll
                animateIn='animate__fadeInDown'
                animateOnce={true} 
+               animatePreScroll={false}
             >
             <h1 className='text-3xl font-bold text-center rounded-lg z-10'>Specialties</h1>
             </AnimationOnScroll>
             <AnimationOnScroll
                animateIn='growToRight'
-               animateOnce={true} 
+               animateOnce={true}
+               animatePreScroll={false} 
             >
                 <div className='bg-[#DD2D50] h-2 rounded-full'></div>
             </AnimationOnScroll>
         </div>
         <AnimationOnScroll
             animateIn='animate__fadeInDown'
-            animateOnce={true} 
+            animateOnce={true}
+            animatePreScroll={false}
         >
             <h1 
                 className='text-3xl font-bold text-center z-10'
@@ -42,6 +46,9 @@ const DrinkSection = ({ refProp }) => {
             title={'Blueberry Banana Smoothie'}
             ingredients={['2 Bananas', '1 Cup of Blueberries', '2 Cups Of Your choice of milk']}
         />
+        <Button 
+            text={'Order Now'}
+        />
         <DrinkItem 
             image={cucumbersmoothie}
             color={'#E2FBC4'}
@@ -52,6 +59,9 @@ const DrinkSection = ({ refProp }) => {
             title={'Cucumber Smoothie'}
             ingredients={['1 Cucumber', '1 Avacado', '1 Cup of kale', '2 Cups Of Your choice of milk']}
         />
+        <Button 
+            text={'Order Now'}
+        />
         <DrinkItem 
             image={mangoalmond}
             color={'#FDF3D8'}
@@ -61,6 +71,9 @@ const DrinkSection = ({ refProp }) => {
             animation={'animate-shadowInYellow'}
             title={'Mango Almond Smoothie'}
             ingredients={['2 Mangoes', '1 Cup of Almonds', '2 Cups Of Your choice of milk']}
+        />
+        <Button 
+            text={'Order Now'}
         />
     </div>
   )

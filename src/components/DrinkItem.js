@@ -4,7 +4,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const DrinkItem = ({ image, color, darkColor, title, ingredients, animation, decoration, width }) => {
   return (
-    <div className='my-16 flex justify-center items-center gap-12 animate-riseUpFadeIn'>
+    <div className='mt-16 mb-8 flex justify-center items-center gap-12 animate-riseUpFadeIn'>
             <SpecialtyImage 
                 color={darkColor}
                 image={image}
@@ -14,6 +14,7 @@ const DrinkItem = ({ image, color, darkColor, title, ingredients, animation, dec
             <AnimationOnScroll 
                 animateIn="animate__bounceIn"
                 animateOnce={true}
+                animatePreScroll={false}
             >
                 <div className={`min-w-[30rem] flex flex-col justify-center items-start gap-5 p-10 z-10`}
                     style={{boxShadow: `20px 20px 0px ${darkColor}`, backgroundColor: color}}

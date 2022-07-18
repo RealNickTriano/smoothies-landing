@@ -3,10 +3,10 @@ import ContactForm from './ContactForm'
 import Header from './Header'
 import blob from '../images/blob.svg'
 
-const ContactSection = () => {
+const ContactSection = ({ refProp }) => {
   return (
     <>
-        <div /* ref={refProp} */ className='flex flex-col justify-center text-center items-center mb-16 min-h-screen'>
+        <div ref={refProp} className='flex flex-col justify-center text-center items-center mb-16 min-h-screen'>
             <Header 
                 text={'Contact Us'}
             />

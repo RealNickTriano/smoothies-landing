@@ -6,6 +6,7 @@ const Card = ({ text, image, position, rotation, width, height, margin }) => {
     <AnimationOnScroll
       animateIn='animate__bounceIn'
       animateOnce={true}
+      animatePreScroll={false}
     >
       <div className={`flex flex-col justify-center items-center h-80 ${margin} relative`}>
           <img className={`${rotation} ${width} ${height} border-4 border-[#DD2D50] rounded-xl`} src={image} alt="" />

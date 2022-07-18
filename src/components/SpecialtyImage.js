@@ -7,6 +7,7 @@ const SpecialtyImage = ({ color, image, width}) => {
       <AnimationOnScroll
         animateIn="animate__backInLeft"
         animateOnce={true}
+        animatePreScroll={true}
       >
         
         <div 

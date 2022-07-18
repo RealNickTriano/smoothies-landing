@@ -15,10 +15,12 @@ function App() {
 
   const specialties = useRef(null)
   const about = useRef(null)
+  const contact = useRef(null)
+  const home = useRef(null)
 
   return (
     <>
-      <div className="absolute top-[-30%] left-[-40%] z-0 animate-wiggle hidden laptop:block">
+      <div ref={home} className="absolute top-[-30%] left-[-40%] z-0 animate-wiggle hidden laptop:block">
         <img src={blob} alt="" />
       </div>
       <div className="flex justify-center items-start desktop:min-h-screen desktop:mt-36 mt-16">
@@ -26,6 +28,8 @@ function App() {
           navItems={navItems}
           specialtiesRef={specialties}
           aboutRef={about}
+          contactRef={contact}
+          homeRef={home}
         />
       </div>
       <DrinkSection 
@@ -34,7 +38,9 @@ function App() {
       <AboutSection 
         refProp={about}
       />
-      <ContactSection />
+      <ContactSection 
+        refProp={contact}
+      />
       <Footer />
     </>
   );

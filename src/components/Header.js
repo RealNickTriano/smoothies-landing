@@ -7,6 +7,7 @@ const Header = ({ text }) => {
         <AnimationOnScroll
             animateIn='animate__fadeInDown'
             animateOnce={true} 
+            animatePreScroll={false}
         >
             <h1 className='text-3xl font-bold text-center rounded-lg z-10'>{text}</h1>
         </AnimationOnScroll>
