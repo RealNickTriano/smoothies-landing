@@ -4,10 +4,10 @@ import { useRef } from 'react'
 export const NavItem = ({ text, link, specialtiesRef, aboutRef, contactRef, homeRef }) => {
     const [animate, setAnimate] = useState(false);
 
-    const scrollToDrinks = () => specialtiesRef.current.scrollIntoView()
-    const scrollToAbout = () => aboutRef.current.scrollIntoView()
-    const scrollToHome = () => homeRef.current.scrollIntoView()
-    const scrollToContact = () => contactRef.current.scrollIntoView()
+    const scrollToDrinks = () => window.scrollTo({top: specialtiesRef.current.offsetTop - 50, behavior: 'smooth'})
+    const scrollToAbout = () => window.scrollTo({top: aboutRef.current.offsetTop, behavior: 'smooth'})
+    const scrollToHome = () => window.scrollTo({top: homeRef.current.offsetTop, behavior: 'smooth'})
+    const scrollToContact = () => window.scrollTo({top: contactRef.current.offsetTop, behavior: 'smooth'})
 
    // nav-line-animate
   return (

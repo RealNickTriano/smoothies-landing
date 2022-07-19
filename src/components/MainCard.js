@@ -13,7 +13,7 @@ import SocialBar from './SocialBar'
 
 const MainCard = ({ navItems, specialtiesRef, aboutRef, contactRef, homeRef }) => {
   return (
-    <div className='bg-white rounded-xl border-2 border-red-500 desktop:shadow-lg desktop:px-20 px-5 py-12 pb-40 desktop:w-full desktop:translate-x-5 desktop:ml-36 relative z-10'>
+    <div className='bg-white rounded-xl border-2 border-red-500 desktop:shadow-lg desktop:px-20 px-5 py-12 pb-40 desktop:w-full w-[100%] desktop:translate-x-5 desktop:ml-36 relative z-10'>
         <CardNav 
             navItems={navItems}
             specialtiesRef={specialtiesRef}

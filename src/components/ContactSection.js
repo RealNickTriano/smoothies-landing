@@ -11,7 +11,7 @@ const ContactSection = ({ refProp }) => {
                 text={'Contact Us'}
             />
             <div
-                className='w-2/3 py-6 px-12 flex justify-center items-center bg-white shadow-md rounded-lg border-4 border-black'>
+                className='desktop:w-2/3 w-full py-6 px-12 flex justify-center items-center bg-white shadow-md rounded-lg border-4 border-black'>
                 <ContactForm />
             </div>
         </div>

@@ -4,7 +4,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const DrinkItem = ({ image, color, darkColor, title, ingredients, animation, decoration, width }) => {
   return (
-    <div className='mt-16 mb-8 flex justify-center items-center gap-12 animate-riseUpFadeIn'>
+    <div className='mt-16 mb-8 desktop:flex-row flex flex-col justify-center items-center gap-12 animate-riseUpFadeIn'>
             <SpecialtyImage 
                 color={darkColor}
                 image={image}
@@ -16,11 +16,11 @@ const DrinkItem = ({ image, color, darkColor, title, ingredients, animation, dec
                 animateOnce={true}
                 animatePreScroll={false}
             >
-                <div className={`min-w-[30rem] flex flex-col justify-center items-start gap-5 p-10 z-10`}
+                <div className={`desktop:min-w-[30rem] min-w-[20rem] flex flex-col justify-center items-start gap-5 p-10 z-10`}
                     style={{boxShadow: `20px 20px 0px ${darkColor}`, backgroundColor: color}}
                 >
                     <h1 
-                        className={`text-3xl font-bold text-center underline ${decoration}`}
+                        className={`desktop:text-3xl text-2xl font-bold text-center underline ${decoration}`}
                     >
                         {title}
                     </h1>
@@ -29,7 +29,7 @@ const DrinkItem = ({ image, color, darkColor, title, ingredients, animation, dec
                                 ingredients.map((item, index) => {
                                     return (
                                         <h1 
-                                            className='capitalize text-2xl font-bold text-left'
+                                            className='capitalize desktop:text-2xl text-xl font-bold text-left'
                                         >
                                             {item}
                                         </h1>
