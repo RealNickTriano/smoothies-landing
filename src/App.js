@@ -2,13 +2,14 @@ import DrinkSection from "./components/DrinkSection";
 import MainCard from "./components/MainCard";
 import blob from './images/blob.svg';
 import blueBlob from './images/blueblob.svg';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import AboutSection from "./components/AboutSection";
 import Footer from "./components/Footer";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import ContactSection from "./components/ContactSection";
 import MainNav from "./components/MainNav";
+import useWindowDimensions from "./hooks/useWindowDimeensions";
 
 function App() {
 
@@ -20,6 +21,27 @@ function App() {
   const about = useRef(null)
   const contact = useRef(null)
   const home = useRef(null)
+
+  const checkNav = () => {
+    if (window.scrollY > Math.abs(home.current.offsetTop) + 50)
+    {
+      setShowNav(true)
+
+    } else {
+      setShowNav(false)
+
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', checkNav);
+
+    return () => {
+      window.removeEventListener('scroll', checkNav);
+    };
+
+  }, [])
+  
 
   return (
     <>
