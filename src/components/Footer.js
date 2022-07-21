@@ -6,7 +6,7 @@ import SocialsFoot from './SocialsFoot'
 const Footer = () => {
   return (
     <div className='bg-[#DD2D50] mt-64 flex justify-center items-center flex-col py-12'>
-      <div className='flex justify-center gap-20 items-center mb-12'>
+      <div className='flex justify-center desktop:gap-20 gap-10 items-center mb-12'>
 
         <div className='flex flex-col justify-center items-center'>
           <LogoWhite />
