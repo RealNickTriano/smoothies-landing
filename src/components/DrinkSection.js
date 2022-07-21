@@ -8,7 +8,7 @@ import DrinkItem from './DrinkItem'
 
 const DrinkSection = ({ refProp }) => {
   return (
-    <div ref={refProp} className='min-h-screen flex flex-col justify-center items-center z-10'>
+    <div ref={refProp} className='desktop:mt-0 mt-12 min-h-screen flex flex-col justify-center items-center z-10'>
         <div className='mb-5'>
             <AnimationOnScroll
                animateIn='animate__fadeInDown'

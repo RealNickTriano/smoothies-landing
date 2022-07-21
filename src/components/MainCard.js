@@ -26,7 +26,7 @@ const MainCard = ({ navItems, specialtiesRef, aboutRef, contactRef, homeRef }) =
         <div className='z-10 absolute desktop:-top-20 -top-10 left-1/2'>
             <img className='desktop:w-[100%] w-[75%]' src={strawberry} alt="" />
         </div>
-        <div className='z-10 absolute -bottom-20 left-2/3 invisible desktop:visible'>
+        <div className='z-10 absolute -bottom-20 left-2/3 hidden desktop:flex'>
             <img src={blackberry} alt="" />
         </div>
         <div className='z-10 absolute desktop:top-1/3 desktop:-left-20 -top-10 left-20'>

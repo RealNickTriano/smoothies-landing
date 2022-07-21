@@ -7,7 +7,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const AboutSection = ({ refProp }) => {
   return (
-    <div ref={refProp} className='flex flex-col justify-center text-center items-center mb-16 min-h-screen'>
+    <div ref={refProp} className='desktop:mt-0 mt-12 flex flex-col justify-center text-center items-center mb-16 min-h-screen'>
         <div className='mb-5'>
             <AnimationOnScroll
                animateIn='animate__fadeInDown'
