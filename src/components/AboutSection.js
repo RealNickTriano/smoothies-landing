@@ -26,7 +26,9 @@ const AboutSection = ({ refProp }) => {
             animatePreScroll={false}
         >
         <div className='flex justify-center items-center'>
-            <p className='text-xl desktop:w-1/2 w-3/4 text-center font-medium mb-5'>Come to <span className='font-bold text-[#DD2D50]'>Smoothie</span> in Somerville, NJ for a sweet, refreshing treat! <span className='font-bold text-[#DD2D50]'>Smoothie</span> uses nonfat frozen yogurt and fresh ingredients to make delicious combinations. <span className='font-bold text-[#DD2D50]'>Smoothie</span>'s menu features a variety of items including real fruit smoothies, fresh squeezed juices, nondairy fruit frosties, and an assortment of natural grab and go snack offerings. Founded in 2010 <span className='font-bold text-[#DD2D50]'>Smoothie</span> has evolved to become the ultimate place for fun food! Treat yourself right!</p>
+            <p className='text-xl desktop:w-1/2 w-3/4 text-center font-medium mb-5'>
+                Come to <span className='font-bold text-[#DD2D50]'>Smoothie</span> in Somerville, NJ for a sweet, refreshing treat! <span className='font-bold text-[#DD2D50]'>Smoothie</span> uses nonfat frozen yogurt and fresh ingredients to make delicious combinations. <span className='font-bold text-[#DD2D50]'>Smoothie</span>'s menu features a variety of items including real fruit smoothies, fresh squeezed juices, nondairy fruit frosties, and an assortment of natural grab and go snack offerings. Founded in 2010 <span className='font-bold text-[#DD2D50]'>Smoothie</span> has evolved to become the ultimate place for fun food! Treat yourself right!
+            </p>
         </div>
         </AnimationOnScroll>
 
