@@ -31,6 +31,9 @@ const Footer = () => {
       <div className='h-[1px] w-3/4 bg-white'></div>
       <div className='flex flex-col justify-center items-center gap-2 mb-6 mt-12'>
         <SocialsFoot />
+        <h1 className='font-medium text-white text-sm'>
+         <a href="https://www.figma.com/community/file/1128586699392676680">Design from Figma by Nickelfox Design</a>
+        </h1>
         <Copyright />
       </div>
     </div>
