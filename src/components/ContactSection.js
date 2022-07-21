@@ -1,7 +1,6 @@
 import React from 'react'
 import ContactForm from './ContactForm'
 import Header from './Header'
-import blob from '../images/blob.svg'
 
 const ContactSection = ({ refProp }) => {
   return (

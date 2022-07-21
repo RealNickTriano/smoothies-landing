@@ -18,21 +18,25 @@ const Details = () => {
           <a 
             href='https://www.doordash.com/'
             target="_blank"
+            rel='noopener'
             className='hover:text-[#DD2D50] hover:cursor-pointer'
           ><SiDoordash size={25}/></a>
           <a
             href='https://www.grubhub.com/'
             target="_blank"
+            rel='noopener'
             className='hover:text-[#DD2D50] hover:cursor-pointer'
           ><SiGrubhub size={50}/></a>
           <a
             href='https://www.ubereats.com/'
             target="_blank"
+            rel='noopener'
             className='hover:text-[#DD2D50] hover:cursor-pointer'
           ><SiUbereats size={30}/></a>
           <a
             href='https://postmates.com/'
             target="_blank"
+            rel='noopener'
             className='hover:text-[#DD2D50] hover:cursor-pointer'
           ><SiPostmates size={40}/></a>
         </div>

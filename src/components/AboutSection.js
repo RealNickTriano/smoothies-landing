@@ -4,7 +4,6 @@ import ingredImage from '../images/ingedientsimage.jpg'
 import staffImage from '../images/staff.png'
 import smoothiesImage from '../images/smoothies.jpeg'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
-import Logo from './Logo'
 
 const AboutSection = ({ refProp }) => {
   return (
